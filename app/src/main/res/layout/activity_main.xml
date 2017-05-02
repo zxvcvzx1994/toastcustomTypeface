@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200sp"
+
+    android:layout_height="200sp"
+    tools:context="com.example.kh.demo.MainActivity">
+   <ToggleButton
+       android:id="@+id/togglebutton"
+       android:textOff="Off toggle button"
+       android:textOn="On toaggle button"
+       android:onClick="toggle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <TextView
+       android:layout_below="@+id/togglebutton"
+       android:id="@+id/txtdemo"
+       android:text="vo cong vinh"
+       android:textSize="30sp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <CheckBox
+       android:id="@+id/cb"
+       android:text="COffee"
+       android:layout_below="@+id/txtdemo"
+       android:onClick="process"
+
+       android:checked="false"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+</RelativeLayout>
